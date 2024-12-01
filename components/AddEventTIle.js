@@ -44,7 +44,7 @@ const AddEventTIle = ({ day, month, year, details }) => {
         placeholder="Enter event details here..."
         value={desc}
         onChange={(e) => setDesc(e.target.value)}
-        onKeyUp={(e) => {
+        onKeyDown={(e) => {
           if (e.key === "Enter") {
             handleSaveEvent();
           }
